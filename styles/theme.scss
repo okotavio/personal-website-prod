@@ -1,0 +1,21 @@
+:root {
+    --color-identity-blue: #1379BC;
+    --color-identity-yellow: #EA9325;
+    --color-identity-green: #148F74;
+    --color-identity-black: #0E120D;
+
+    --color-background-default: #FBFAF9;
+    --color-text-default: #0E110E;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-identity-blue: #1379BC;
+        --color-identity-yellow: #EA9325;
+        --color-identity-green: #148F74;
+        --color-identity-black: #0E120D;
+
+        --color-background-default: #0E110E;
+        --color-text-default: #FBFAF9;
+    }
+}
