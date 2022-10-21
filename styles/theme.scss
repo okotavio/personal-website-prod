@@ -27,3 +27,16 @@ body {
   font-family: var(--typography-font-family), -apple-system, sans-serif;
   font-feature-settings: "ss02" on, "ss03" on, "ss06" on, "ss08" on;
 }
+
+* {
+  box-sizing: border-box;
+  outline: 2px solid transparent;
+  outline-offset: 15px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-text-default);
+  outline-offset: 2px;
+  border-radius: 4px;
+  transition: all 300ms var(--motion-ease-default);
+}
