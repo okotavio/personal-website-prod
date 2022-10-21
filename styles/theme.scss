@@ -1,11 +1,13 @@
+@import "base";
+
 :root {
     --color-identity-blue: #1379BC;
     --color-identity-yellow: #EA9325;
     --color-identity-green: #148F74;
     --color-identity-black: #0E120D;
 
-    --color-background-default: #FBFAF9;
-    --color-text-default: #0E110E;
+    --color-background-default: var(--color-gray-0);
+    --color-text-default: var(--color-gray-900);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +17,7 @@
         --color-identity-green: #148F74;
         --color-identity-black: #0E120D;
 
-        --color-background-default: #0E110E;
-        --color-text-default: #FBFAF9;
+        --color-background-default: var(--color-gray-900);
+        --color-text-default: var(--color-gray-0);
     }
 }
