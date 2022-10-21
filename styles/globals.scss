@@ -1,10 +1,19 @@
 /* Global style definitions */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   color: var(--color-text-default);
   background: var(--color-background-default);
-  padding: 0;
-  margin: 0;
 }
 
 * {
