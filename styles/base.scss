@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Uncut Sans;
+  src: url(Uncut-Sans-Variable.woff2);
+  font-display: swap;
+  font-weight: 200 900;
+}
+
 :root {
   --color-gray-0: #fbfaf9;
   --color-gray-50: #e7e6e3;
@@ -24,6 +31,8 @@
   --spacing-8: 64px;
   --spacing-9: 72px;
   --spacing-10: 80px;
+
+  --typography-font-family: "Uncut Sans";
 
   --motion-ease-default: cubic-bezier(0.83, 0, 0.17, 1);
 }

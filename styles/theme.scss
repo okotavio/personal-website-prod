@@ -1,23 +1,29 @@
 @import "base";
 
 :root {
-    --color-identity-blue: #1379BC;
-    --color-identity-yellow: #EA9325;
-    --color-identity-green: #148F74;
-    --color-identity-black: #0E120D;
+  --color-identity-blue: #1379bc;
+  --color-identity-yellow: #ea9325;
+  --color-identity-green: #148f74;
+  --color-identity-black: #0e120d;
 
-    --color-background-default: var(--color-gray-0);
-    --color-text-default: var(--color-gray-900);
+  --color-background-default: var(--color-gray-0);
+  --color-text-default: var(--color-gray-900);
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --color-identity-blue: #1379BC;
-        --color-identity-yellow: #EA9325;
-        --color-identity-green: #148F74;
-        --color-identity-black: #0E120D;
+  :root {
+    --color-identity-blue: #1379bc;
+    --color-identity-yellow: #ea9325;
+    --color-identity-green: #148f74;
+    --color-identity-black: #0e120d;
 
-        --color-background-default: var(--color-gray-900);
-        --color-text-default: var(--color-gray-0);
-    }
+    --color-background-default: var(--color-gray-900);
+    --color-text-default: var(--color-gray-0);
+  }
+}
+
+html,
+body {
+  font-family: var(--typography-font-family), -apple-system, sans-serif;
+  font-feature-settings: "ss02" on, "ss03" on, "ss06" on, "ss08" on;
 }
