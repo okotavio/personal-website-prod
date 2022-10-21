@@ -30,13 +30,22 @@ body {
 
 * {
   box-sizing: border-box;
-  outline: 2px solid transparent;
-  outline-offset: 15px;
+}
+
+a {
+  outline: 0px solid transparent;
+  outline-offset: 8px;
+  transition: all 300ms var(--motion-ease-default);
+}
+
+@media (prefers-reduced-motion) {
+  a {
+    transition: none;
+  }
 }
 
 :focus-visible {
   outline: 2px solid var(--color-text-default);
   outline-offset: 2px;
   border-radius: 4px;
-  transition: all 300ms var(--motion-ease-default);
 }
