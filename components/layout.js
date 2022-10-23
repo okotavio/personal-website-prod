@@ -20,7 +20,9 @@ export default function Layout({ children, pageTitle }) {
   return (
     <>
       <Head>
-        <title>{pageTitle}</title>
+        <title>
+          {pageTitle} {pageTitle ? "—" : ""} Otávio ✦ Product designer
+        </title>
         <meta property="og:type" content="website" />
         <link rel="icon" href={`favicon-${faviconVar}.ico`} />
       </Head>

@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <Layout pageTitle="This is the homepage">
+    <Layout>
       <div className={styles.container}>
         <main className={styles.main}>
           <Link href="/about">
