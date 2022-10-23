@@ -6,12 +6,15 @@ import styles from "../styles/Home.module.css";
 
 export default function Layout({ children, pageTitle }) {
   const faviconVar = Math.floor(Math.random() * 3) + 1;
+
+  const globalTitle = `${
+    pageTitle ? `${pageTitle} —` : ""
+  } Otavio Vidal ✦ Product Designer`;
+
   return (
     <>
       <Head>
-        <title>
-          {pageTitle} {pageTitle ? "—" : ""} Otavio Vidal ✦ Product Designer
-        </title>
+        <title>{globalTitle}</title>
         <meta property="og:type" content="website" />
         <link rel="icon" href={`favicon-${faviconVar}.ico`} />
       </Head>
