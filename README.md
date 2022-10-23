@@ -1,8 +1,6 @@
 ![Otavio Vidal's logo](/public/logo.svg)
 
-# Otavio Vidal
-
-Yet another quirky portfolio, designed with absolutely no investigation or research into any other typefaces from any specific time period. There’s no deeper meaning behind the design, but hopefully it’s still interesting enough to be taken into consideration for your next project.
+Yet another product design portfolio. Designed to reflect my own quirky personality with the goal of showcasing my past design works, blog posts and thoughts about the tech industry and random subjects.
 
 ---
 
