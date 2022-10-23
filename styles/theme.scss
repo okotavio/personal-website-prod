@@ -12,6 +12,7 @@
 
   --typography-body-size: 20px;
   --typography-body-lh: 30px;
+  --typography-body-weight: 400;
 }
 
 /* Dark mode */
@@ -25,11 +26,4 @@
     --color-background-default: var(--color-gray-900);
     --color-text-default: var(--color-gray-0);
   }
-}
-
-/* Global style definitions */
-html,
-body {
-  font-family: var(--typography-font-family), -apple-system, sans-serif;
-  font-feature-settings: "ss02" on, "ss03" on, "ss06" on, "ss08" on;
 }
