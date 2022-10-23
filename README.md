@@ -1,3 +1,13 @@
+![Otavio Vidal's logo](/public/logo.svg)
+
+# Otavio Vidal
+
+Yet another quirky portfolio, designed with absolutely no investigation or research into any other typefaces from any specific time period. There’s no deeper meaning behind the design, but hopefully it’s still interesting enough to be taken into consideration for your next project.
+
+---
+
+### Original Next.js readme
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
