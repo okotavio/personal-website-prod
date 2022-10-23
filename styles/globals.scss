@@ -61,3 +61,21 @@ h1 {
   font-family: var(--typography-font-family-display);
   font-weight: 400;
 }
+
+header {
+  position: fixed;
+  backdrop-filter: blur(12px);
+  bottom: var(--spacing-3);
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 400px;
+  display: flex;
+  gap: var(--spacing-3);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active {
+  color: blue;
+}
