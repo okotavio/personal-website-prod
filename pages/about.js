@@ -1,7 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
+import Layout from "../components/layout";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function About() {
-  return <div className={styles.container}>About me</div>;
+  return (
+    <Layout pageTitle="About oko">
+      this is the about me page
+      <Link href="/">
+        <a>go back to home</a>
+      </Link>
+    </Layout>
+  );
 }
