@@ -8,7 +8,9 @@
   --color-identity-black: #0e120d;
 
   --color-background-default: var(--color-gray-0);
+  --color-background-inverse-default: var(--color-gray-900);
   --color-text-default: var(--color-gray-900);
+  --color-text-inverse-default: var(--color-gray-0);
 
   --typography-body-size: 18px;
   --typography-body-lh: 24px;
@@ -24,6 +26,8 @@
     --color-identity-black: #0e120d;
 
     --color-background-default: var(--color-gray-900);
+    --color-background-inverse-default: var(--color-gray-0);
     --color-text-default: var(--color-gray-0);
+    --color-text-inverse-default: var(--color-gray-900);
   }
 }

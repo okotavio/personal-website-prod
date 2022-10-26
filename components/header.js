@@ -7,8 +7,10 @@ export default function Header({}) {
   return (
     <header>
       <h1>This is the header</h1>
-      <ActiveLink href="/">Home</ActiveLink>
-      <ActiveLink href="/about">About</ActiveLink>
+      <nav className="menu">
+        <ActiveLink href="/">Home</ActiveLink>
+        <ActiveLink href="/about">About</ActiveLink>
+      </nav>
     </header>
   );
 }

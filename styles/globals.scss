@@ -41,7 +41,7 @@ a {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
   @media (max-width: 960px) {
     padding: 0 40px;
   }
@@ -65,17 +65,28 @@ h1 {
 header {
   position: fixed;
   backdrop-filter: blur(12px);
-  bottom: var(--spacing-3);
+  bottom: var(--spacing-5);
   margin: auto;
   left: 0;
   right: 0;
-  width: 400px;
+  width: 600px;
   display: flex;
   gap: var(--spacing-3);
   justify-content: space-between;
   align-items: center;
+  padding: var(--spacing-05) var(--spacing-4);
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  padding: var(--spacing-2) var(--spacing-1);
 }
 
 .active {
-  color: blue;
+  background: var(--color-background-inverse-default);
+  color: var(--color-text-inverse-default);
 }
