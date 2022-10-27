@@ -105,11 +105,11 @@ header {
   left: 0%;
   z-index: -1;
   animation-duration: 200ms;
-  animation-name: active-entrance;
+  animation-name: header-items;
   animation-timing-function: var(--motion-ease-default);
 }
 
-@keyframes active-entrance {
+@keyframes header-items {
   0% {
     transform: scale(95%);
   }
@@ -118,7 +118,7 @@ header {
   }
 }
 
-@keyframes entrance {
+@keyframes content {
   0% {
     transform: translateY(8px);
     opacity: 0;
