@@ -6,9 +6,7 @@ import Footer from "./footer";
 export default function Layout({ children, pageTitle }) {
   const faviconVar = Math.floor(Math.random() * 3) + 1;
 
-  const globalTitle = `${
-    pageTitle ? `${pageTitle} —` : ""
-  } Otavio Vidal ✦ Product Designer`;
+  const globalTitle = `${pageTitle ? `${pageTitle} —` : ""} Otavio Vidal`;
 
   return (
     <>

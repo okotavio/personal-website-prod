@@ -8,6 +8,8 @@
   --color-identity-black: #0e120d;
 
   --color-background-default: var(--color-gray-0);
+  --color-background-subdued: var(--color-gray-100);
+  --color-background-border: var(--color-gray-50);
   --color-background-inverse-default: var(--color-gray-900);
   --color-text-default: var(--color-gray-900);
   --color-text-inverse-default: var(--color-gray-0);
@@ -26,6 +28,8 @@
     --color-identity-black: #0e120d;
 
     --color-background-default: var(--color-gray-900);
+    --color-background-subdued: var(--color-gray-800);
+    --color-background-border: var(--color-gray-700);
     --color-background-inverse-default: var(--color-gray-0);
     --color-text-default: var(--color-gray-0);
     --color-text-inverse-default: var(--color-gray-900);
