@@ -111,24 +111,26 @@ header {
 
 @keyframes active-entrance {
   0% {
-    transform: translateY(4px);
+    transform: scale(95%);
   }
   100% {
-    transform: translateY(0px);
+    transform: scale(100%);
   }
 }
 
 @keyframes entrance {
   0% {
     transform: translateY(8px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 
 main {
-  animation-duration: 200ms;
+  animation-duration: 500ms;
   animation-name: entrance;
   animation-timing-function: var(--motion-ease-default);
 }
