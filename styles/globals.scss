@@ -93,7 +93,7 @@ header {
 
 .menu {
   display: flex;
-  gap: var(--spacing-15);
+  gap: var(--spacing-1);
 }
 
 .menu a {
@@ -139,7 +139,7 @@ header {
 }
 
 .menu .active:hover::before {
-  background: var(--color-background-inverse-hover);
+  background: var(--color-background-inverse-default);
 }
 
 .logo {
