@@ -10,7 +10,7 @@
   --color-background-default: var(--color-gray-0);
   --color-background-hover: var(--color-gray-50);
   --color-background-subdued: var(--color-gray-100);
-  --color-background-border: var(--color-gray-50);
+  --color-background-border: var(--color-gray-200);
   --color-background-inverse-default: var(--color-gray-900);
   --color-background-inverse-hover: var(--color-gray-800);
   --color-text-default: var(--color-gray-900);
@@ -32,10 +32,39 @@
     --color-background-default: var(--color-gray-900);
     --color-background-hover: var(--color-gray-800);
     --color-background-subdued: var(--color-gray-800);
-    --color-background-border: var(--color-gray-700);
+    --color-background-border: var(--color-gray-500);
     --color-background-inverse-default: var(--color-gray-0);
     --color-background-inverse-hover: var(--color-gray-50);
     --color-text-default: var(--color-gray-0);
     --color-text-inverse-default: var(--color-gray-900);
+  }
+}
+
+@keyframes header-items {
+  0% {
+    transform: scale(95%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes content {
+  0% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  100% {
+    transform: unset;
+    opacity: 1;
+  }
+}
+
+@keyframes header-entrance {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

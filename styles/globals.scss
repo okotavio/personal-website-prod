@@ -33,7 +33,6 @@ a {
 :focus-visible {
   outline: 2px solid var(--color-text-default);
   outline-offset: 2px;
-  border-radius: 4px;
 }
 
 /* Container */
@@ -62,15 +61,16 @@ h1 {
   font-weight: 400;
 }
 
-.headercontainer {
-  width: 100%;
+.header-container {
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: var(--spacing-5);
+  bottom: var(--spacing-3);
   left: var(--spacing-3);
   right: var(--spacing-3);
+  z-index: 999;
 }
 
 header {
@@ -78,19 +78,17 @@ header {
   padding: var(--spacing-15) var(--spacing-15);
   justify-content: space-between;
   align-items: center;
-  gap: var(--spacing-15);
-  animation-duration: 200ms;
-  animation-name: header-entrance;
-  animation-timing-function: var(--motion-ease-default);
-  --border-bottom-width: 0px;
-  --border-color: rgba(255, 255, 255, 0.15);
-  --border-left-width: 0px;
-  --border-right-width: 0px;
-  --border-style: solid;
-  --border-top-width: 1px;
+  gap: var(--spacing-3);
   backdrop-filter: blur(100px);
-  background-color: rgba(77, 81, 81, 0.3);
+  background-color: rgba(77, 81, 81, 0.2);
   box-shadow: rgb(0 0 0 / 25%) 0px 1px 1px 0px;
+  border: 1px solid var(--color-background-border);
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    width: 100%;
+  }
 }
 
 .menu {
@@ -103,6 +101,8 @@ header {
   height: 100%;
   position: relative;
   padding: var(--spacing-15) var(--spacing-3);
+  background: var;
+  font-size: 16px;
 }
 
 .menu a:hover::before {
@@ -142,34 +142,15 @@ header {
   background: var(--color-background-inverse-hover);
 }
 
-@keyframes header-items {
-  0% {
-    transform: scale(95%);
-  }
-  100% {
-    transform: scale(100%);
-  }
-}
-
-@keyframes content {
-  0% {
-    transform: translateY(8px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
 .logo {
-  background: red;
   height: 48px;
   width: 144px;
+  cursor: pointer;
 }
 
-// main {
-//   animation-duration: 500ms;
-//   animation-name: content;
-//   animation-timing-function: var(--motion-ease-default);
-// }
+.content {
+  animation-duration: 500ms;
+  animation-name: content;
+  animation-timing-function: var(--motion-ease-default);
+  z-index: 0;
+}
