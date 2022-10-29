@@ -16,7 +16,7 @@ export default function Layout({ children, pageTitle }) {
         <link rel="icon" href={`favicon-${faviconVar}.ico`} />
       </Head>
 
-      <div class="header-container">
+      <div className="header-container">
         <Header />
       </div>
       <div className="content">{children}</div>
