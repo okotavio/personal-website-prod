@@ -55,12 +55,16 @@ h1 {
 }
 
 header {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: translateZ(0);
   display: flex;
   padding: var(--spacing-15) var(--spacing-15);
   justify-content: space-between;
   align-items: center;
   gap: var(--spacing-15);
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
   background: linear-gradient(
     -45deg,
     rgba(10, 10, 10, 0.2),
@@ -147,7 +151,7 @@ header {
   cursor: pointer;
 }
 
-.content {
+.content-entrance {
   animation-duration: 600ms;
   animation-name: content;
   animation-timing-function: var(--motion-ease-default);
