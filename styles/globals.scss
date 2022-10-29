@@ -112,6 +112,10 @@ header {
   font-size: 16px;
 }
 
+.menu a svg {
+  fill: currentColor;
+}
+
 .menu > *:hover:not(.active) {
   position: relative;
 }
@@ -142,51 +146,6 @@ header {
   animation-name: header-items;
   animation-timing-function: var(--motion-ease-default);
 }
-
-// .menu a svg {
-//   fill: currentColor;
-// }
-
-// .menu a:hover:not(.active) {
-//   color: var(--color-text-default);
-// }
-
-// .menu a:hover::before {
-//   position: absolute;
-//   content: "";
-//   background: var(--color-background-subdued);
-//   width: 100%;
-//   height: 100%;
-//   top: 0%;
-//   left: 0%;
-//   z-index: -1;
-// animation-duration: 200ms;
-// animation-name: header-items;
-// animation-timing-function: var(--motion-ease-default);
-// }
-
-// .menu a .active {
-//   color: var(--color-text-inverse-default);
-//   position: relative;
-// }
-
-// .menu .active::before {
-//   position: absolute;
-//   content: "";
-//   background: var(--color-background-inverse-default);
-//   width: 100%;
-//   height: 100%;
-//   top: 0%;
-//   left: 0%;
-//   z-index: -2;
-//   animation-duration: 200ms;
-//   animation-name: header-items;
-//   animation-timing-function: var(--motion-ease-default);
-// }
-
-// .menu a .active:hover::before {
-//   background: var(--color-background-inverse-default);
-// }
 
 .logo {
   height: 48px;

@@ -4,7 +4,7 @@ import Header from "./header";
 import Footer from "./footer";
 
 export default function Layout({ children, pageTitle }) {
-  const faviconVar = Math.floor(Math.random() * 3) + 1;
+  const faviconVar = Math.floor(Math.random() * 9) + 1;
 
   const globalTitle = `${pageTitle ? `${pageTitle} —` : ""} Otavio Vidal`;
 
@@ -13,7 +13,7 @@ export default function Layout({ children, pageTitle }) {
       <Head>
         <title>{globalTitle}</title>
         <meta property="og:type" content="website" />
-        <link rel="icon" href={`favicon-${faviconVar}.ico`} />
+        <link rel="icon" href={`assets/favicon-${faviconVar}.ico`} />
       </Head>
 
       <div className="header-container">
