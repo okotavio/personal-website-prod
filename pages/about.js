@@ -7,9 +7,7 @@ export default function About() {
     <Layout pageTitle="About me">
       <main>
         this is the about me page
-        <Link href="/">
-          <a>go back to home</a>
-        </Link>
+        <Link href="/">go back to home</Link>
       </main>
     </Layout>
   );

@@ -7,9 +7,7 @@ export default function Playground() {
     <Layout pageTitle="Playground">
       <main>
         this is the playground page
-        <Link href="/">
-          <a>go back to home</a>
-        </Link>
+        <Link href="/">go back to home</Link>
       </main>
     </Layout>
   );

@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 export default function ActiveLink({ href, children }) {
   const router = useRouter();
   return (
-    <Link href={href}>
-      <a className={router.pathname == `${href}` ? "active" : ""}>{children}</a>
-    </Link>
+    <div className={router.pathname == `${href}` ? "active" : ""}>
+      <Link href={href}>{children}</Link>
+    </div>
   );
 }
