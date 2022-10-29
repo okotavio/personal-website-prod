@@ -1,0 +1,25 @@
+/* Global focus styles */
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: 0px solid transparent;
+  outline-offset: 12px;
+  transition: all 200ms var(--motion-ease-default);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-text-default);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion) {
+  a {
+    transition: none;
+  }
+  header,
+  .content,
+  .menu a:hover::before,
+  .menu .active::before {
+    animation: none !important;
+  }
+}

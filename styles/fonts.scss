@@ -2,12 +2,14 @@
   font-family: Uncut Sans;
   src: url(../public/Uncut-Sans-Variable.woff2);
   font-weight: 100 900;
+  font-display: optional;
 }
 
 @font-face {
   font-family: Fraunces;
   src: url(../public/Fraunces.woff2);
   font-weight: 100 900;
+  font-display: optional;
 }
 
 @font-face {
@@ -15,12 +17,20 @@
   src: url(../public/Fraunces-Italic.woff2);
   font-style: italic;
   font-weight: 100 900;
+  font-display: optional;
 }
 
 @font-face {
   font-family: Panamera;
   src: url(../public/Panamera-Regular.woff2);
   font-weight: 400;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Georgia Fallback";
+  src: local("Georgia");
+  size-adjust: 107%;
 }
 
 // @font-face {
