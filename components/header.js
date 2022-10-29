@@ -23,18 +23,23 @@ export default function Header({}) {
   // console.log(headerEntrance);
 
   return (
-    // <header className={headerEntrance}>
-    <header>
-      <Link href="/">
-        <div className="logo">
-          <Logo />
-        </div>
-      </Link>
-      <nav className="menu">
-        <NavItem href="/" label="Home" />
-        <NavItem href="/about" label="About" />
-        <NavItem href="/playground" label="Playground" />
-      </nav>
-    </header>
+    <>
+      <header>
+        <Link className="skip-to-content-link logo" href="#main">
+          Skip to content
+        </Link>
+        <Link href="/">
+          <div className="logo">
+            <Logo />
+          </div>
+        </Link>
+
+        <nav className="menu">
+          <NavItem href="/" label="Home" />
+          <NavItem href="/about" label="About" />
+          <NavItem href="/playground" label="Playground" />
+        </nav>
+      </header>
+    </>
   );
 }

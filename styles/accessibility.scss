@@ -13,7 +13,8 @@ a {
 }
 
 @media (prefers-reduced-motion) {
-  a {
+  a,
+  .skip-to-content-link {
     transition: none;
   }
   header,
