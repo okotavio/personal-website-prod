@@ -1,4 +1,5 @@
 @import "accessibility";
+@import "animation";
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -145,6 +146,12 @@ header {
   height: 100%;
   animation-duration: 200ms;
   animation-name: header-items;
+  animation-timing-function: var(--motion-ease-default);
+}
+
+.menu > *:hover:not(.active) .label {
+  animation-duration: 350ms;
+  animation-name: header-label;
   animation-timing-function: var(--motion-ease-default);
 }
 

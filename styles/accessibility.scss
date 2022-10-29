@@ -20,7 +20,8 @@ a {
   header,
   .content-entrance,
   .menu a:hover::before,
-  .menu .active::before {
+  .menu .active::before,
+  .menu .label {
     animation: none !important;
   }
 }

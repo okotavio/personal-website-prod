@@ -5,7 +5,7 @@ export default function NavItem({ href, label, icon }) {
   return (
     <ActiveLink href={href}>
       {icon}
-      {label}
+      <div className="label">{label}</div>
     </ActiveLink>
   );
 }
