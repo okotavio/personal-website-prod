@@ -122,6 +122,10 @@ header {
   position: relative;
 }
 
+.menu a:focus-visible:not(.active a) {
+  background: var(--color-background-subdued);
+}
+
 .menu > *:hover:not(.active)::before {
   background: var(--color-background-subdued);
   position: absolute;
