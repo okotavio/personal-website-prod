@@ -15,13 +15,14 @@ a {
 @media (prefers-reduced-motion) {
   a,
   .skip-to-content-link {
-    transition: none;
+    transition: none !important;
   }
   header,
   .content-entrance,
   .menu a:hover::before,
   .menu .active::before,
-  .menu .label {
+  .menu .label,
+  .skip-to-content-link .label {
     animation: none !important;
   }
 }

@@ -8,8 +8,6 @@ import Logo from "../components/logo";
 import Home from "../components/icons/home";
 
 export default function Header({}) {
-  const router = useRouter();
-
   // const [headerEntrance, setHeaderEntrance] = useState("");
   // const handleLoad = () => {
   //   console.log("carregou");
@@ -26,7 +24,7 @@ export default function Header({}) {
     <>
       <header>
         <Link className="skip-to-content-link logo" href="#main">
-          Skip to content
+          <div className="label">Skip to content</div>
         </Link>
         <Link href="/">
           <div className="logo">
