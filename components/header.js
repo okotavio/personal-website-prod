@@ -1,25 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import Link from "next/link";
-import ActiveLink from "../components/activelink";
 import NavItem from "../components/navitem";
-import { useRouter } from "next/router";
-import Logo from "../components/logo";
-import Home from "../components/icons/home";
+import AnimatedLogo from "../components/animatedlogo";
 
 export default function Header({}) {
-  // const [headerEntrance, setHeaderEntrance] = useState("");
-  // const handleLoad = () => {
-  //   console.log("carregou");
-  //   setHeaderEntrance("header-entrance");
-  // };
-  // useEffect(() => {
-  //   globalThis.addEventListener("load", handleLoad);
-  //   return () => globalThis.removeEventListener("load", handleLoad);
-  // }, []);
-
-  // console.log(headerEntrance);
-
   return (
     <>
       <header>
@@ -28,7 +12,7 @@ export default function Header({}) {
         </Link>
         <Link href="/">
           <div className="logo">
-            <Logo />
+            <AnimatedLogo />
           </div>
         </Link>
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
-import { LottiePlayer } from "lottie-web";
 
 function AnimatedLogo() {
   const container = useRef(null);
@@ -12,11 +11,11 @@ function AnimatedLogo() {
       loop: true,
       autoplay: true,
       setSubframe: true,
-      animationData: require("../public/logo.json"),
+      animationData: require("../public/animatedlogo.json"),
     });
   }, []);
 
-  return <div style={{ height: 32, width: 96 }} ref={container}></div>;
+  return <div style={{ height: 48, width: 144 }} ref={container}></div>;
 }
 
 export default AnimatedLogo;
