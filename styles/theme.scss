@@ -13,6 +13,13 @@
   --color-background-border: var(--color-gray-200);
   --color-background-inverse-default: var(--color-gray-900);
   --color-background-inverse-hover: var(--color-gray-800);
+  --color-background-translucid: linear-gradient(
+    -45deg,
+    rgba(10, 10, 10, 0.2),
+    rgba(80, 80, 80, 0.2),
+    rgba(20, 20, 20, 0.2)
+  );
+
   --color-text-default: var(--color-gray-900);
   --color-text-inverse-default: var(--color-gray-0);
 
@@ -35,6 +42,7 @@
     --color-background-border: var(--color-gray-500);
     --color-background-inverse-default: var(--color-gray-0);
     --color-background-inverse-hover: var(--color-gray-50);
+
     --color-text-default: var(--color-gray-0);
     --color-text-inverse-default: var(--color-gray-900);
   }

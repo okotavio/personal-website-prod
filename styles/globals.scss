@@ -57,9 +57,7 @@ h1 {
 
 header {
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
   backface-visibility: hidden;
-  transform: translateZ(0);
   display: flex;
   padding: var(--spacing-15) var(--spacing-15);
   justify-content: space-between;
@@ -67,12 +65,7 @@ header {
   gap: var(--spacing-3);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  background: linear-gradient(
-    -45deg,
-    rgba(10, 10, 10, 0.2),
-    rgba(80, 80, 80, 0.2),
-    rgba(20, 20, 20, 0.2)
-  );
+  background: var(--color-background-translucid);
   background-size: 400% 400%;
   box-shadow: rgb(0 0 0 / 25%) 0px 1px 1px 0px;
   border: 1px solid var(--color-background-border);
@@ -133,6 +126,7 @@ header {
   content: "";
   width: 100%;
   height: 100%;
+  -webkit-animation-fill-mode: forwards;
   animation-duration: 200ms;
   animation-name: header-items;
   animation-timing-function: var(--motion-ease-default);
@@ -152,18 +146,21 @@ header {
   animation-duration: 200ms;
   animation-name: header-items;
   animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
 }
 
 .menu > *:hover:not(.active) .label {
   animation-duration: 400ms;
   animation-name: header-label;
   animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
 }
 
 .menu a:focus-visible .label {
   animation-duration: 400ms;
   animation-name: header-label;
   animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
 }
 
 .skip-to-content-link {
@@ -191,6 +188,7 @@ header {
   animation-duration: 400ms;
   animation-name: header-label;
   animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
 }
 
 .logo {
