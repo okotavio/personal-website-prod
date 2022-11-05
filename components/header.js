@@ -7,11 +7,13 @@ import { useGlobalMouseMove } from "../hooks/useGlobalMouseMove";
 
 export default function Header({}) {
   const [mouseX, mouseY] = useGlobalMouseMove();
+  console.log(mouseX, mouseY);
+
   return (
     <>
       <header
         style={{
-          transform: `translate(${mouseX * 2}px, ${mouseY * 2}px)`,
+          transform: `translate(${mouseX * 1}px, ${mouseY * 1}px)`,
         }}
       >
         <Link className="skip-to-content-link logo" href="#main">

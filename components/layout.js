@@ -21,7 +21,8 @@ export default function Layout({ children, pageTitle }) {
         <Header />
       </div>
       <div className="content-entrance">
-        {children} <Footer />
+        {children}
+        <Footer />
       </div>
     </GlobalMouseMoveProvider>
   );
