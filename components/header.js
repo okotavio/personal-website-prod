@@ -13,7 +13,7 @@ export default function Header({}) {
     <>
       <header
         style={{
-          transform: `translate(${mouseX * 1}px, ${mouseY * 1}px)`,
+          transform: `translate(${mouseX * 2}px, ${mouseY * 2}px)`,
         }}
       >
         <Link className="skip-to-content-link logo" href="#main">
