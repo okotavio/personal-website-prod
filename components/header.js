@@ -3,11 +3,13 @@ import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import NavItem from "../components/navitem";
 import AnimatedLogo from "../components/animatedlogo";
+import Logo from "../components/logo";
 import { useGlobalMouseMove } from "../hooks/useGlobalMouseMove";
+import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 export default function Header({}) {
   const [mouseX, mouseY] = useGlobalMouseMove();
-  console.log(mouseX, mouseY);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   return (
     <>
@@ -21,7 +23,7 @@ export default function Header({}) {
         </Link>
         <Link href="/">
           <div className="logo">
-            <AnimatedLogo />
+            {prefersReducedMotion ? <Logo /> : <AnimatedLogo />}
           </div>
         </Link>
 

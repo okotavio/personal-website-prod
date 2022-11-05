@@ -56,7 +56,7 @@ h1 {
 }
 
 header {
-  transition: transform 10ms var(--motion-ease-default);
+  transition: transform 100ms var(--motion-ease-default);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
@@ -76,7 +76,7 @@ header {
 
 header:hover {
   transform: translate(0px, 0px) !important;
-  transition: transform 500ms var(--motion-ease-default);
+  transition: transform 300ms var(--motion-ease-default);
 }
 
 @media screen and (max-width: 800px) {
