@@ -21,6 +21,7 @@
   );
 
   --color-text-default: var(--color-gray-900);
+  --color-text-subdued: var(--color-gray-800);
   --color-text-inverse-default: var(--color-gray-0);
 
   --typography-body-size: 18px;
@@ -44,6 +45,7 @@
     --color-background-inverse-hover: var(--color-gray-50);
 
     --color-text-default: var(--color-gray-0);
+    --color-text-subdued: var(--color-gray-300);
     --color-text-inverse-default: var(--color-gray-900);
   }
 }

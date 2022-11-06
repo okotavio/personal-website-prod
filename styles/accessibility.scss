@@ -28,4 +28,9 @@ a {
   .menu > *:hover:not(.active)::before {
     animation: none !important;
   }
+  header {
+    background: var(--color-background-subdued) !important;
+    -webkit-backdrop-filter: blur(0px) !important;
+    backdrop-filter: blur(0px) !important;
+  }
 }
