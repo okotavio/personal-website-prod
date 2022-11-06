@@ -1,3 +1,5 @@
+/* Keyframes animations */
+
 @keyframes header-items {
   0% {
     transform: scale(95%);
@@ -16,7 +18,7 @@
   }
 }
 
-@keyframes content {
+@keyframes page {
   0% {
     transform: translateY(8px);
     opacity: 0;
@@ -27,9 +29,9 @@
   }
 }
 
-@keyframes header-entrance {
+@keyframes entrance {
   0% {
-    transform: translateY(80px);
+    transform: translateY(8px);
     opacity: 0;
   }
   100% {
@@ -48,4 +50,40 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* Entrances classes */
+
+.page-entrance {
+  animation-duration: var(--motion-duration-entrance);
+  animation-name: content;
+  animation-timing-function: var(--motion-ease-default);
+  z-index: 0;
+}
+
+.motion-entrance {
+  animation-duration: var(--motion-duration-entrance);
+  animation-name: entrance;
+  animation-timing-function: var(--motion-ease-default);
+  animation-fill-mode: backwards;
+}
+
+.motion-delay-100 {
+  animation-delay: 100ms;
+}
+
+.motion-delay-200 {
+  animation-delay: 200ms;
+}
+
+.motion-delay-300 {
+  animation-delay: 300ms;
+}
+
+.motion-delay-400 {
+  animation-delay: 400ms;
+}
+
+.motion-delay-500 {
+  animation-delay: 500ms;
 }

@@ -13,11 +13,13 @@ export default function Home() {
         <Container>
           <div className="hero">
             <div className="title">
-              <h1>Product,</h1>
-              <h1>Systems,</h1>
-              <h1 className="last-name">Designer.</h1>
+              <h1 className="motion-entrance">Product,</h1>
+              <h1 className="motion-entrance motion-delay-100">Systems,</h1>
+              <h1 className="italic-accent motion-entrance motion-delay-200">
+                Designer.
+              </h1>
             </div>
-            <p className="hero-description">
+            <p className="hero-description motion-entrance motion-delay-400">
               Brazilian-born product designer crafting systems and experiences
               in Berlin, Germany. Previously a Senior Product Designer at
               Hopper, Delivery Hero and QuintoAndar.

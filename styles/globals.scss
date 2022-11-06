@@ -203,22 +203,8 @@ header:hover {
   height: 48px;
 }
 
-.content-entrance {
-  animation-duration: 600ms;
-  animation-name: content;
-  animation-timing-function: var(--motion-ease-default);
-  z-index: 0;
-}
-
-.header-entrance {
-  animation-duration: 1000ms;
-  animation-name: header-entrance;
-  animation-timing-function: var(--motion-ease-default);
-  animation-iteration-count: 1;
-}
-
 .hero {
-  max-width: 50vw;
+  max-width: 500px;
   min-height: 70vh;
   position: relative;
   margin-top: 120px;
@@ -233,11 +219,6 @@ header:hover {
     text-transform: uppercase;
     text-align: center;
   }
-  .last-name {
-    font-family: var(--typography-font-family);
-    font-style: italic;
-    font-weight: 600;
-  }
   .hero-description {
     font-family: var(--typography-font-family-display);
     font-size: 18px;
@@ -245,4 +226,9 @@ header:hover {
     color: var(--color-text-subdued);
     text-align: center;
   }
+}
+
+.italic-accent {
+  font-family: var(--typography-font-family) !important;
+  font-style: italic;
 }

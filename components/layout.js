@@ -20,7 +20,7 @@ export default function Layout({ children, pageTitle }) {
       <div className="header-container">
         <Header />
       </div>
-      <div className="content-entrance">
+      <div className="page-entrance">
         {children}
         <Footer />
       </div>
