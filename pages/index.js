@@ -17,7 +17,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <main className={styles.main}>
+      <main className={styles.main} id="main">
         <Container>
           <div className="hero">
             <div className="title">
@@ -29,8 +29,8 @@ export default function Home({ allPostsData }) {
             </div>
             <p className="hero-description motion-entrance motion-delay-300">
               Brazilian-born product designer crafting systems and experiences
-              in Berlin. Previously a Senior Product Designer at Hopper,
-              Delivery Hero and QuintoAndar.
+              in Berlin at Delivery Hero. Previously a Senior Product Designer
+              at Hopper and QuintoAndar.
             </p>
           </div>
           <ul>

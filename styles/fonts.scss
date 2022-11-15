@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "Reglo";
+  src: url(../public/fonts/Reglo-Bold.woff2);
+  font-weight: 700;
+}
+
+@font-face {
   font-family: "Cabin";
   src: url(../public/fonts/Cabin.woff2);
   font-weight: 100 900;
@@ -24,12 +30,13 @@
 
 @font-face {
   font-family: "Fraunces";
+  font-style: normal;
   src: url(../public/fonts/Fraunces.woff2);
   font-weight: 100 900;
 }
 
 @font-face {
-  font-family: "Fraunces Italic";
+  font-family: "Fraunces";
   src: url(../public/fonts/Fraunces-Italic.woff2);
   font-style: italic;
   font-weight: 100 900;

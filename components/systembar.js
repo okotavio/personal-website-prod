@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../components/container";
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { useGlobalMouseMove } from "../hooks/useGlobalMouseMove";
@@ -9,9 +10,11 @@ export default function SystemBar({}) {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   return (
-    <div className="system-bar">
-      <div className="left">Berlin 17:13</div>
-      <div className="right">otavioluisvidal@gmail.com</div>
-    </div>
+    <Container>
+      <div className="system-bar">
+        <div className="left">Berlin 17:13</div>
+        <div className="right">otavioluisvidal@gmail.com</div>
+      </div>
+    </Container>
   );
 }
