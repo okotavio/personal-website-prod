@@ -19,19 +19,21 @@ export default function Home({ allPostsData }) {
     <Layout>
       <main className={styles.main} id="main">
         <Container>
-          <div className="hero">
-            <div className="title">
-              <h1 className="motion-entrance">Product,</h1>
-              <h1 className="motion-entrance motion-delay-100">Systems,</h1>
-              <h1 className="italic-accent motion-entrance motion-delay-200">
-                Designer.
-              </h1>
+          <div className="polka">
+            <div className="hero">
+              <div className="title">
+                <h1 className="motion-entrance">Product,</h1>
+                <h1 className="motion-entrance motion-delay-100">Systems,</h1>
+                <h1 className="italic-accent motion-entrance motion-delay-200">
+                  Designer.
+                </h1>
+              </div>
+              <p className="hero-description motion-entrance motion-delay-300">
+                Brazilian-born product designer crafting systems and experiences
+                in Berlin at Delivery Hero. Previously a Senior Product Designer
+                at Hopper and QuintoAndar.
+              </p>
             </div>
-            <p className="hero-description motion-entrance motion-delay-300">
-              Brazilian-born product designer crafting systems and experiences
-              in Berlin at Delivery Hero. Previously a Senior Product Designer
-              at Hopper and QuintoAndar.
-            </p>
           </div>
           <ul>
             {allPostsData.map(({ id, date, title }) => (

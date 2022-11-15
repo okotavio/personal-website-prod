@@ -1,4 +1,5 @@
 import Layout from "../../components/layout";
+import Container from "../../components/container";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 
@@ -24,16 +25,16 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
   return (
     <Layout pageTitle={postData.title}>
-      <main>
-        {postData.title}
-        <br />
-        {postData.id}
-        <br />
-        <Date dateString={postData.date} />
-
-        <br />
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </main>
+      <Container>
+        <main>
+          <article>
+            <h1>{postData.title}</h1>
+            {postData.id}
+            <Date dateString={postData.date} />
+            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          </article>
+        </main>
+      </Container>
     </Layout>
   );
 }

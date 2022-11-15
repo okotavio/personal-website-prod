@@ -60,7 +60,7 @@ header {
   align-items: center;
   gap: var(--spacing-3);
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   background: var(--color-background-translucid);
   background-size: 400% 400%;
   box-shadow: rgb(0 0 0 / 25%) 0px 1px 1px 0px;
@@ -203,13 +203,24 @@ header:hover {
   height: 48px;
 }
 
+.polka {
+  background-image: radial-gradient(
+    var(--color-background-border),
+    1px,
+    transparent 0
+  );
+  background-size: 32px 32px;
+  background-position: -12px -12px;
+  height: 80vh;
+}
+
 .hero {
-  max-width: 500px;
-  min-height: 70vh;
-  position: relative;
-  margin-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px;
 
   h1 {
     font-family: var(--typography-font-family);
