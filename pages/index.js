@@ -1,10 +1,7 @@
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
-
 import Link from "next/link";
-import Image from "next/image";
-import AnimatedLogo from "../components/animatedlogo";
-import { useState, useEffect } from "react";
+import Date from "../components/date";
 import Container from "../components/container";
 import styles from "../styles/Home.module.scss";
 
@@ -36,20 +33,19 @@ export default function Home({ allPostsData }) {
               Delivery Hero and QuintoAndar.
             </p>
           </div>
+          <ul>
+            {allPostsData.map(({ id, date, title }) => (
+              <li key={id}>
+                <Link href={`/work/${id}`}>{title}</Link>
+                <br />
+                <small>
+                  <Date dateString={date} />
+                </small>
+              </li>
+            ))}
+          </ul>
         </Container>
       </main>
-
-      <ul>
-        {allPostsData.map(({ id, date, title }) => (
-          <li key={id}>
-            {title}
-            <br />
-            {id}
-            <br />
-            {date}
-          </li>
-        ))}
-      </ul>
     </Layout>
   );
 }

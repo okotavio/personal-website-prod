@@ -12,27 +12,25 @@ export default function Header({}) {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   return (
-    <>
-      <header
-        style={{
-          transform: `translate(${mouseX * 3}px, ${mouseY * 3}px)`,
-        }}
-      >
-        <Link className="skip-to-content-link logo" href="#main">
-          <div className="label">Skip to content</div>
-        </Link>
-        <Link href="/">
-          <div className="logo" aria-label="Otavio Vidal Homepage">
-            {prefersReducedMotion ? <Logo /> : <AnimatedLogo />}
-          </div>
-        </Link>
+    <header
+      style={{
+        transform: `translate(${mouseX * 2}px, ${mouseY * 2}px)`,
+      }}
+    >
+      <Link className="skip-to-content-link logo" href="#main">
+        <div className="label">Skip to content</div>
+      </Link>
+      <Link href="/">
+        <div className="logo" aria-label="Otavio Vidal Homepage">
+          {prefersReducedMotion ? <Logo /> : <AnimatedLogo />}
+        </div>
+      </Link>
 
-        <nav className="menu">
-          <NavItem href="/" label="Home" />
-          <NavItem href="/about" label="About" />
-          <NavItem href="/playground" label="Playground" />
-        </nav>
-      </header>
-    </>
+      <nav className="menu">
+        <NavItem href="/" label="Home" />
+        <NavItem href="/about" label="About" />
+        <NavItem href="/playground" label="Playground" />
+      </nav>
+    </header>
   );
 }

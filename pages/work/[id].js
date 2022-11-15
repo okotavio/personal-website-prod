@@ -1,5 +1,6 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
+import Date from "../../components/date";
 
 export async function getStaticProps({ params }) {
   // Add the "await" keyword like this:
@@ -22,14 +23,17 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
   return (
-    <Layout>
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
-      {postData.date}
-      <br />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+    <Layout pageTitle={postData.title}>
+      <main>
+        {postData.title}
+        <br />
+        {postData.id}
+        <br />
+        <Date dateString={postData.date} />
+
+        <br />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      </main>
     </Layout>
   );
 }
