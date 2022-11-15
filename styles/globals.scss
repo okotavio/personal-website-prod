@@ -212,15 +212,15 @@ header:hover {
   margin-right: auto;
 
   h1 {
-    font-family: var(--typography-font-family-display);
-    font-weight: 500;
-    font-size: 72px;
+    font-family: var(--typography-font-family);
+    font-weight: 600;
+    font-size: 64px;
     line-height: 1rem;
     text-transform: uppercase;
     text-align: center;
   }
   .hero-description {
-    font-family: var(--typography-font-family-display);
+    font-family: var(--typography-font-family);
     font-size: 18px;
     line-height: 1.25em;
     color: var(--color-text-subdued);
@@ -229,6 +229,6 @@ header:hover {
 }
 
 .italic-accent {
-  font-family: var(--typography-font-family) !important;
+  font-family: var(--typography-font-family-display) !important;
   font-style: italic;
 }

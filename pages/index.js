@@ -1,4 +1,6 @@
 import Layout from "../components/layout";
+import { getSortedPostsData } from "../lib/posts";
+
 import Link from "next/link";
 import Image from "next/image";
 import AnimatedLogo from "../components/animatedlogo";
@@ -6,7 +8,16 @@ import { useState, useEffect } from "react";
 import Container from "../components/container";
 import styles from "../styles/Home.module.scss";
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Home({ allPostsData }) {
   return (
     <Layout>
       <main className={styles.main}>
@@ -19,14 +30,26 @@ export default function Home() {
                 Designer.
               </h1>
             </div>
-            <p className="hero-description motion-entrance motion-delay-400">
+            <p className="hero-description motion-entrance motion-delay-300">
               Brazilian-born product designer crafting systems and experiences
-              in Berlin, Germany. Previously a Senior Product Designer at
-              Hopper, Delivery Hero and QuintoAndar.
+              in Berlin. Previously a Senior Product Designer at Hopper,
+              Delivery Hero and QuintoAndar.
             </p>
           </div>
         </Container>
       </main>
+
+      <ul>
+        {allPostsData.map(({ id, date, title }) => (
+          <li key={id}>
+            {title}
+            <br />
+            {id}
+            <br />
+            {date}
+          </li>
+        ))}
+      </ul>
     </Layout>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "./header";
+import SystemBar from "./systembar";
 import Footer from "./footer";
 import { GlobalMouseMoveProvider } from "../hooks/useGlobalMouseMove";
 
@@ -20,6 +21,7 @@ export default function Layout({ children, pageTitle }) {
       <div className="header-container">
         <Header />
       </div>
+      <SystemBar />
       <div className="page-entrance">
         {children}
         <Footer />

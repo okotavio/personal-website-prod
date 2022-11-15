@@ -1,3 +1,10 @@
+/* Tokens */
+
+:root {
+  --motion-ease-default: ease-in-out;
+  --motion-duration-entrance: 300ms;
+}
+
 /* Keyframes animations */
 
 @keyframes header-items {
@@ -86,4 +93,24 @@
 
 .motion-delay-500 {
   animation-delay: 500ms;
+}
+
+.motion-delay-600 {
+  animation-delay: 600ms;
+}
+
+.motion-delay-700 {
+  animation-delay: 700ms;
+}
+
+.motion-delay-800 {
+  animation-delay: 800ms;
+}
+
+.motion-delay-900 {
+  animation-delay: 900ms;
+}
+
+.motion-delay-1000 {
+  animation-delay: 1000ms;
 }

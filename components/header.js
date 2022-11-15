@@ -15,14 +15,14 @@ export default function Header({}) {
     <>
       <header
         style={{
-          transform: `translate(${mouseX * 2}px, ${mouseY * 2}px)`,
+          transform: `translate(${mouseX * 3}px, ${mouseY * 3}px)`,
         }}
       >
         <Link className="skip-to-content-link logo" href="#main">
           <div className="label">Skip to content</div>
         </Link>
         <Link href="/">
-          <div className="logo">
+          <div className="logo" aria-label="Otavio Vidal Homepage">
             {prefersReducedMotion ? <Logo /> : <AnimatedLogo />}
           </div>
         </Link>
