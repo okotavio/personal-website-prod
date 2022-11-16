@@ -10,11 +10,9 @@ export default function SystemBar({}) {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   return (
-    <Container>
-      <div className="system-bar">
-        <div className="left">Berlin 17:13</div>
-        <div className="right">otavioluisvidal@gmail.com</div>
-      </div>
-    </Container>
+    <div className="system-bar">
+      <div className="left">Berlin 17:13</div>
+      <div className="right">otavioluisvidal@gmail.com</div>
+    </div>
   );
 }

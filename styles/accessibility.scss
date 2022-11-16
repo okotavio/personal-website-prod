@@ -25,7 +25,8 @@ a {
   .menu .active::before,
   .menu .label,
   .skip-to-content-link .label,
-  .menu > *:hover:not(.active)::before {
+  .menu > *:hover:not(.active)::before,
+  .polka {
     animation: none !important;
   }
   header {

@@ -18,35 +18,33 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <main className={styles.main} id="main">
-        <Container>
-          <div className="polka">
+        <div className="polka">
+          <Container>
             <div className="hero">
               <div className="title">
-                <h1 className="motion-entrance">Product,</h1>
-                <h1 className="motion-entrance motion-delay-100">Systems,</h1>
-                <h1 className="italic-accent motion-entrance motion-delay-200">
-                  Designer.
+                <h1 className="motion-entrance">
+                  Product designer, design systems.
                 </h1>
               </div>
-              <p className="hero-description motion-entrance motion-delay-300">
+              <p className="hero-description motion-entrance motion-delay-200">
                 Brazilian-born product designer crafting systems and experiences
                 in Berlin at Delivery Hero. Previously a Senior Product Designer
                 at Hopper and QuintoAndar.
               </p>
             </div>
-          </div>
-          <ul>
-            {allPostsData.map(({ id, date, title }) => (
-              <li key={id}>
-                <Link href={`/work/${id}`}>{title}</Link>
-                <br />
-                <small>
-                  <Date dateString={date} />
-                </small>
-              </li>
-            ))}
-          </ul>
-        </Container>
+            <ul>
+              {allPostsData.map(({ id, date, title }) => (
+                <li key={id}>
+                  <Link href={`/work/${id}`}>{title}</Link>
+                  <br />
+                  <small>
+                    <Date dateString={date} />
+                  </small>
+                </li>
+              ))}
+            </ul>
+          </Container>
+        </div>
       </main>
     </Layout>
   );
