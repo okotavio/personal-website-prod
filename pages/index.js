@@ -22,8 +22,10 @@ export default function Home({ allPostsData }) {
           <Container>
             <div className="hero">
               <div className="title">
-                <h1 className="motion-entrance">
-                  Product designer, design systems.
+                <h1 className="motion-entrance">Product designer,</h1>
+                <h1 className="motion-entrance motion-delay-100">
+                  {" "}
+                  design systems.
                 </h1>
               </div>
               <p className="hero-description motion-entrance motion-delay-200">

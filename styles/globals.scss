@@ -229,10 +229,10 @@ header:hover {
     font-family: var(--typography-font-family-display);
     font-weight: 600;
     font-size: 56px;
-    line-height: 1em;
     color: var(--color-text-default);
     max-width: 600px;
-    margin-bottom: 0;
+    line-height: 0.75rem;
+    margin-bottom: 24px;
   }
   .hero-description {
     font-family: var(--typography-font-family);
@@ -261,4 +261,5 @@ header:hover {
   color: var(--color-text-subdued);
   background: linear-gradient(rgba(14, 17, 14, 1) 90%, rgba(14, 17, 14, 0));
   height: 64px;
+  z-index: 1;
 }

@@ -2,7 +2,7 @@
 
 :root {
   --motion-ease-default: ease-in-out;
-  --motion-duration-entrance: 300ms;
+  --motion-duration-entrance: 500ms;
 }
 
 /* Keyframes animations */
@@ -27,8 +27,8 @@
 
 @keyframes page {
   0% {
-    transform: translateY(8px);
-    opacity: 0;
+    transform: translateY(24px);
+    opacity: 1;
   }
   100% {
     transform: unset;
