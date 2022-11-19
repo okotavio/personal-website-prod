@@ -21,7 +21,7 @@ body {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 48px;
   @media (max-width: 960px) {
     padding: 0 40px;
   }
@@ -107,6 +107,7 @@ header:hover {
   align-items: center;
   justify-content: center;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .menu a svg {
@@ -204,15 +205,16 @@ header:hover {
 }
 
 .polka {
+  box-shadow: inset 0 -80px 200px -100px var(--color-background-default);
   background-image: radial-gradient(
     var(--color-background-border),
     1px,
     transparent 0
   );
-  background-size: 40px 40px;
-  height: 80vh;
+  background-size: 32px 32px;
+  height: 700px;
   // -webkit-animation-fill-mode: forwards;
-  animation-duration: 1000s;
+  animation-duration: 700s;
   animation-name: polka;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -221,18 +223,20 @@ header:hover {
 .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding-top: 20vh;
-  // padding-left: 48px;
+  gap: 24px;
+  line-height: 0.8em;
 
   h1 {
     font-family: var(--typography-font-family-display);
-    font-weight: 600;
-    font-size: 56px;
+    font-weight: 700;
+    font-variation-settings: "wdth" 125;
+    font-size: 64px;
     color: var(--color-text-default);
-    max-width: 600px;
-    line-height: 0.75rem;
-    margin-bottom: 24px;
+    text-align: center;
+    margin-bottom: 0px;
   }
   .hero-description {
     font-family: var(--typography-font-family);
@@ -240,26 +244,29 @@ header:hover {
     line-height: 1.25em;
     color: var(--color-text-subdued);
     max-width: 500px;
+    text-align: center;
   }
 }
 
-.italic-accent {
-  font-family: var(--typography-font-family-display) !important;
-  font-style: italic;
-  text-transform: none;
+.indent-negative {
+  margin-left: -80px;
+}
+
+.indent-positive {
+  margin-left: 80px;
 }
 
 .system-bar {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 32px;
+  align-items: flex-start;
+  padding: 24px 48px;
   top: 0;
   width: 100%;
   font-size: 14px;
   color: var(--color-text-subdued);
-  background: linear-gradient(rgba(14, 17, 14, 1) 90%, rgba(14, 17, 14, 0));
-  height: 64px;
+  background: linear-gradient(rgba(14, 17, 14, 1) 40%, rgba(14, 17, 14, 0));
+  height: 120px;
   z-index: 1;
 }

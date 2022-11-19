@@ -1,9 +1,8 @@
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import Date from "../components/date";
 import Container from "../components/container";
 import styles from "../styles/Home.module.scss";
+import PostThumb from "../components/postThumb";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -24,7 +23,6 @@ export default function Home({ allPostsData }) {
               <div className="title">
                 <h1 className="motion-entrance">Product designer,</h1>
                 <h1 className="motion-entrance motion-delay-100">
-                  {" "}
                   design systems.
                 </h1>
               </div>
@@ -36,13 +34,12 @@ export default function Home({ allPostsData }) {
             </div>
             <ul>
               {allPostsData.map(({ id, date, title }) => (
-                <li key={id}>
-                  <Link href={`/work/${id}`}>{title}</Link>
-                  <br />
-                  <small>
-                    <Date dateString={date} />
-                  </small>
-                </li>
+                <PostThumb
+                  id={id}
+                  title={title}
+                  link={`/work/${id}`}
+                  date={date}
+                />
               ))}
             </ul>
           </Container>

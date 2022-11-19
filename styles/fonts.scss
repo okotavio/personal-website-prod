@@ -5,20 +5,30 @@
 }
 
 @font-face {
-  font-family: "Reglo";
-  src: url(../public/fonts/Reglo-Bold.woff2);
-  font-weight: 700;
+  font-family: "Basteleur Moonlight";
+  src: url(../public/fonts/Basteleur-Moonlight.woff2);
+}
+
+@font-face {
+  font-family: "Basteleur Bold";
+  src: url(../public/fonts/Basteleur-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Mona";
+  src: url(../public/fonts/Mona-Sans.woff2);
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Martian";
+  src: url(../public/fonts/MartianMono.ttf);
+  font-weight: 100 900;
 }
 
 @font-face {
   font-family: "Cabin";
   src: url(../public/fonts/Cabin.woff2);
-  font-weight: 100 900;
-}
-
-@font-face {
-  font-family: "Lexend";
-  src: url(../public/fonts/Lexend.woff2);
   font-weight: 100 900;
 }
 
