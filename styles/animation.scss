@@ -3,6 +3,7 @@
 :root {
   --motion-ease-default: ease-out;
   --motion-duration-entrance: 500ms;
+  --motion-duration-faster: 300ms;
 }
 
 /* Keyframes animations */
@@ -40,12 +41,10 @@
   0% {
     transform: translateY(16px);
     opacity: 0;
-    filter: blur(4px);
   }
   100% {
     transform: unset;
     opacity: 1;
-    filter: blur(0px);
   }
 }
 
@@ -80,7 +79,7 @@
 }
 
 .motion-entrance {
-  animation-duration: var(--motion-duration-entrance);
+  animation-duration: var(--motion-duration-faster);
   animation-name: entrance;
   animation-timing-function: var(--motion-ease-default);
   animation-fill-mode: backwards;

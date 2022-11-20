@@ -21,8 +21,10 @@ export default function Home({ allPostsData }) {
           <Container>
             <div className="hero">
               <div className="title">
-                <h1 className="motion-entrance">Product designer,</h1>
-                <h1 className="motion-entrance motion-delay-200">
+                <h1 className="motion-entrance indent-negative">
+                  Product designer,
+                </h1>
+                <h1 className="motion-entrance motion-delay-200 indent-positive">
                   design systems.
                 </h1>
               </div>
