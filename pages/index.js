@@ -20,14 +20,12 @@ export default function Home({ allPostsData }) {
         <div className="polka">
           <Container>
             <div className="hero">
-              <div className="title">
-                <h1 className="motion-entrance indent-negative">
-                  Product designer,
-                </h1>
-                <h1 className="motion-entrance motion-delay-200 indent-positive">
-                  design systems.
-                </h1>
-              </div>
+              <h1 className="motion-entrance indent-negative">
+                Product designer,
+              </h1>
+              <h1 className="motion-entrance motion-delay-200">
+                <span class="typewriter"></span>
+              </h1>
               <p className="hero-description motion-entrance motion-delay-400">
                 Brazilian-born product designer crafting systems and experiences
                 in Berlin at Delivery Hero. Previously a Senior Product Designer
