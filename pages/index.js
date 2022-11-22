@@ -3,6 +3,8 @@ import { getSortedPostsData } from "../lib/posts";
 import Container from "../components/container";
 import styles from "../styles/Home.module.scss";
 import PostThumb from "../components/postThumb";
+import { React, useState, useEffect } from "react";
+import Typewriter from "typewriter-effect";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -20,12 +22,26 @@ export default function Home({ allPostsData }) {
         <div className="polka">
           <Container>
             <div className="hero">
-              <h1 className="motion-entrance indent-negative">
-                Product designer,
-              </h1>
-              <h1 className="motion-entrance motion-delay-200">
-                <span class="typewriter"></span>
-              </h1>
+              <h1 className="motion-entrance ">Product designer,</h1>
+              <span className="motion-entrance motion-delay-200">
+                <h1>
+                  <Typewriter
+                    options={{
+                      strings: [
+                        "design systems.",
+                        "end-to-end.",
+                        "strategy.",
+                        "user research.",
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </h1>
+                {/* <h1 className="blinking-cursor">{text1}</h1>
+                <h1 className="blinking-cursor">{text2}</h1>
+                <h1 className="blinking-cursor">{text3}</h1> */}
+              </span>
               <p className="hero-description motion-entrance motion-delay-400">
                 Brazilian-born product designer crafting systems and experiences
                 in Berlin at Delivery Hero. Previously a Senior Product Designer
