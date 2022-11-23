@@ -2,14 +2,18 @@ import React from "react";
 import Container from "../components/container";
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import { useGlobalMouseMove } from "../hooks/useGlobalMouseMove";
-import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
+import Clock from "react-live-clock";
 
 export default function SystemBar({}) {
   return (
     <div className="system-bar">
-      <div className="left">Berlin 17:45</div>
-      <div className="right">otavioluisvidal@gmail.com</div>
+      <Container flexbox spaceBetween>
+        <div className="left">
+          Berlin{" "}
+          <Clock format={"HH:mm"} ticking={true} timezone={"Europe/Berlin"} />
+        </div>
+        <div className="right">otavioluisvidal@gmail.com</div>
+      </Container>
     </div>
   );
 }

@@ -19,9 +19,9 @@ body {
 
 /* Container */
 .container {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 80px;
   @media (max-width: 960px) {
     padding: 0 40px;
   }
@@ -223,7 +223,6 @@ header:hover {
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding-top: 188px;
   gap: 0px;
@@ -232,7 +231,6 @@ header:hover {
     font-weight: 700;
     font-size: 72px;
     color: var(--color-text-default);
-    text-align: center;
     margin-bottom: 0px;
     line-height: 1em;
     margin-top: 0;
@@ -241,9 +239,9 @@ header:hover {
     font-family: var(--typography-font-family);
     font-size: 21px;
     line-height: 1.25em;
-    color: var(--color-text-subdued);
+    color: var(--color-text-default);
     max-width: 600px;
-    text-align: center;
+    margin-bottom: 40px;
   }
 }
 
@@ -317,10 +315,6 @@ header:hover {
 
 .system-bar {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 24px 48px;
   top: 0;
   width: 100%;
   font-size: 14px;
@@ -328,4 +322,78 @@ header:hover {
   background: linear-gradient(rgba(14, 17, 14, 1) 40%, rgba(14, 17, 14, 0));
   height: 120px;
   z-index: 1;
+  padding: 24px 0;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.button {
+  padding: 16px 32px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 0px;
+  font-family: var(--typography-font-family);
+  font-feature-settings: "ss02" on, "ss03" on, "ss06" on, "ss08" on;
+  font-size: var(--typography-body-size);
+  line-height: var(--typography-body-lh);
+  transition: all 300ms ease;
+  background: var(--color-background-inverse-default);
+  color: var(--color-text-inverse-default);
+  position: relative;
+}
+
+.button:hover {
+  transform: scale(1.025);
+}
+
+.button:hover > .button-label {
+  animation-duration: 300ms;
+  animation-name: header-label;
+  animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
+}
+
+.primary {
+  background: var(--color-identity-yellow);
+}
+
+.button:hover:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  opacity: 30%;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  z-index: -2;
+  animation-duration: 200ms;
+  animation-name: header-items;
+  animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
+}
+
+.button:hover:after {
+  content: "";
+  position: absolute;
+  background: inherit;
+  opacity: 20%;
+  filter: blur(10px);
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  z-index: -2;
+  animation-duration: 500ms;
+  animation-name: header-items;
+  animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
 }
