@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Button({ children, link, variant }) {
+export default function Button({ children, link, variant, icon }) {
   return (
     <button
       className={`button ${variant}`}
@@ -10,7 +10,11 @@ export default function Button({ children, link, variant }) {
         window.location.href = `${link}`;
       }}
     >
-      <div className="button-label">{children}</div>
+      {icon ? <div className="button-icon-start">{icon}</div> : ""}
+      <div className={`button-label ${icon ? "button-label-icon" : ""}`}>
+        {children}
+      </div>
+      {icon ? <div className="button-icon-end">{icon}</div> : ""}
     </button>
   );
 }

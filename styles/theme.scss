@@ -58,5 +58,13 @@ h4,
 h5,
 h6 {
   font-family: var(--typography-font-family-display);
-  font-variation-settings: "wdth" 125;
+  // font-variation-settings: "wdth" 125;
+  font-variation-settings: "opsz" 7;
+  letter-spacing: -0.025em;
+}
+
+p {
+  font-family: var(--typography-font-family),
+    var(--typography-font-family-fallback), -apple-system, sans-serif;
+  font-feature-settings: "ss02" on, "ss03" on, "ss06" on, "ss08" on;
 }

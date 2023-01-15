@@ -69,6 +69,7 @@ export default function Home({ allPostsData }) {
                 </Button>
               </div>
             </div>
+            <h4 className="section-title">Recent projects</h4>
             <ul>
               {allPostsData.map(({ id, date, title }) => (
                 <PostThumb
@@ -80,6 +81,7 @@ export default function Home({ allPostsData }) {
               ))}
             </ul>
           </Container>
+          <div className="polka-end" />
         </div>
       </main>
     </Layout>

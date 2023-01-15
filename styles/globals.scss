@@ -30,9 +30,9 @@ body {
 body {
   color: var(--color-text-default);
   background: var(--color-background-default);
-  font-family: var(--typography-font-family),
-    var(--typography-font-family-fallback), -apple-system, sans-serif;
-  font-feature-settings: "ss02" on, "ss03" on, "ss06" on, "ss08" on;
+}
+
+p {
   font-size: var(--typography-body-size);
   line-height: var(--typography-body-lh);
   font-weight: var(--typography-body-weight);
@@ -108,6 +108,8 @@ header:hover {
   justify-content: center;
   font-size: 16px;
   font-weight: 400;
+  font-family: var(--typography-font-family-display);
+  font-variation-settings: "opsz" 8;
 }
 
 .menu a svg {
@@ -169,7 +171,7 @@ header:hover {
   background: var(--color-background-default);
   width: inherit;
   position: absolute;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,19 +207,30 @@ header:hover {
 }
 
 .polka {
-  box-shadow: inset 0 -80px 200px -100px var(--color-background-default);
   background-image: radial-gradient(
     var(--color-background-border),
     1px,
     transparent 0
   );
   background-size: 32px 32px;
-  height: 700px;
+  height: 900px;
   // -webkit-animation-fill-mode: forwards;
   animation-duration: 700s;
   animation-name: polka;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  position: relative;
+  z-index: 0;
+}
+
+.polka-end {
+  background: linear-gradient(rgba(14, 17, 14, 0), rgba(14, 17, 14, 1));
+  content: "";
+  height: 400px;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
 }
 
 .hero {
@@ -226,13 +239,15 @@ header:hover {
   justify-content: center;
   padding-top: 188px;
   gap: 0px;
+  margin-bottom: 120px;
 
   h1 {
-    font-weight: 700;
+    font-family: var(--typography-font-family-display);
+    font-weight: 375;
     font-size: 72px;
     color: var(--color-text-default);
     margin-bottom: 0px;
-    line-height: 1em;
+    line-height: 1.125em;
     margin-top: 0;
   }
   .hero-description {
@@ -319,8 +334,8 @@ header:hover {
   width: 100%;
   font-size: 14px;
   color: var(--color-text-subdued);
-  background: linear-gradient(rgba(14, 17, 14, 1) 40%, rgba(14, 17, 14, 0));
-  height: 120px;
+  background: linear-gradient(rgba(14, 17, 14, 1), rgba(14, 17, 14, 0));
+  height: 176px;
   z-index: 1;
   padding: 24px 0;
 }
@@ -334,31 +349,28 @@ header:hover {
 }
 
 .button {
-  padding: 16px 32px;
+  height: 56px;
+  padding: 0 24px;
   border: none;
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
-  font-size: 20px;
   cursor: pointer;
   border-radius: 0px;
-  font-family: var(--typography-font-family);
-  font-feature-settings: "ss02" on, "ss03" on, "ss06" on, "ss08" on;
+  font-family: var(--typography-font-family-display);
+  font-feature-settings: "ss02" off, "ss03" off, "ss06" off, "ss08" off;
   font-size: var(--typography-body-size);
   line-height: var(--typography-body-lh);
   transition: all 300ms ease;
   background: var(--color-background-inverse-default);
   color: var(--color-text-inverse-default);
   position: relative;
+  gap: 8px;
+  font-variation-settings: "opsz" 8;
 }
 
 .button:hover {
   transform: scale(1.025);
-}
-
-.button:hover > .button-label {
-  animation-duration: 300ms;
-  animation-name: header-label;
-  animation-timing-function: var(--motion-ease-default);
-  -webkit-animation-fill-mode: forwards;
 }
 
 .primary {
@@ -396,4 +408,46 @@ header:hover {
   animation-name: header-items;
   animation-timing-function: var(--motion-ease-default);
   -webkit-animation-fill-mode: forwards;
+}
+
+.button:hover > .button-label {
+  animation-duration: 400ms;
+  animation-name: header-label;
+  animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
+}
+
+.button:hover > .button-label-icon {
+  transform: translateX(-32px) !important;
+}
+
+.button-icon-start {
+  transition: all 300ms ease;
+  width: 24px;
+  height: 24px;
+  background: red;
+}
+
+.button-icon-end {
+  right: 0;
+  transition: all 300ms ease;
+  width: 24px;
+  height: 24px;
+  background: red;
+  transform: translateX(24px);
+  position: absolute;
+}
+
+// .button:hover > .button-icon-start {
+//   transform: translateX(-48px);
+// }
+
+// .button:hover > .button-icon-end {
+//   transform: translateX(-24px);
+// }
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--color-text-default);
 }

@@ -13,9 +13,9 @@ export default function Header({}) {
 
   return (
     <header
-      style={{
-        transform: `translate(${mouseX * 2}px, ${mouseY * 2}px)`,
-      }}
+    // style={{
+    //   transform: `translate(${mouseX * 2}px, ${mouseY * 2}px)`,
+    // }}
     >
       <Link className="skip-to-content-link logo" href="#main">
         <div className="label">Skip to content</div>
