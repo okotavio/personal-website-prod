@@ -73,14 +73,19 @@ export default function Home({ allPostsData }) {
           <Container>
             <div className="section-body">
               <p>
-                I've been designing products at fast-paced startups since 2018.
-                After working on different business domains, from conversion to
-                scalability, I started specializing in design systems.
+                I&apos;ve been designing products at fast-paced startups since
+                2018. After working on different business domains, from
+                conversion to scalability, I started specializing in design
+                systems.
               </p>
 
               <div className="experience-list">
                 <div className="experience-item">
-                  <a href="https://deliveryhero.com/" target="_blank">
+                  <a
+                    href="https://deliveryhero.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div className="experience-time">2022-present</div>
                     <div className="experience-role">
                       Senior Product Designer, Design Systems
@@ -90,7 +95,11 @@ export default function Home({ allPostsData }) {
                   </a>
                 </div>
                 <div className="experience-item">
-                  <a href="https://hopper.com/" target="_blank">
+                  <a
+                    href="https://hopper.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div className="experience-time">2021-22</div>
                     <div className="experience-role">
                       Senior Product Designer
@@ -100,7 +109,11 @@ export default function Home({ allPostsData }) {
                   </a>
                 </div>
                 <div className="experience-item">
-                  <a href="https://quintoandar.com.br" target="_blank">
+                  <a
+                    href="https://quintoandar.com.br"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div className="experience-time">2018-21</div>
                     <div className="experience-role">
                       Senior Product Designer, Design Systems

@@ -14,17 +14,29 @@ export default function Footer({}) {
           <div className="footer-end">
             <ul className="footer-links">
               <li>
-                <a href="https://linkedin.com/in/otaviovidal" target="_blank">
+                <a
+                  href="https://linkedin.com/in/otaviovidal"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Linkedin
                 </a>
               </li>
               <li>
-                <a href="https://www.figma.com/@okotavio" target="_blank">
+                <a
+                  href="https://www.figma.com/@okotavio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Figma
                 </a>
               </li>
               <li>
-                <a href="https://github.com/okotavio" target="_blank">
+                <a
+                  href="https://github.com/okotavio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Github
                 </a>
               </li>
