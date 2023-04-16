@@ -9,24 +9,38 @@
 
   --color-background-default: var(--color-gray-0);
   --color-background-hover: var(--color-gray-50);
-  --color-background-subdued: var(--color-gray-100);
-  --color-background-border: var(--color-gray-200);
+  --color-background-subdued: var(--color-gray-50);
+  --color-background-border-default: var(--color-gray-100);
+  --color-background-border-hover: var(--color-gray-900);
   --color-background-inverse-default: var(--color-gray-900);
   --color-background-inverse-hover: var(--color-gray-800);
-  --color-background-translucid: linear-gradient(
-    -45deg,
-    rgba(10, 10, 10, 0.2),
-    rgba(80, 80, 80, 0.2),
-    rgba(20, 20, 20, 0.2)
-  );
 
   --color-text-default: var(--color-gray-900);
-  --color-text-subdued: var(--color-gray-800);
+  --color-text-subdued: var(--color-gray-300);
   --color-text-inverse-default: var(--color-gray-0);
 
-  --typography-body-size: 18px;
-  --typography-body-lh: 24px;
-  --typography-body-weight: 400;
+  --color-interaction-primary-default: var(--color-gray-900);
+
+  --typography-body-size: 1.25rem; /* 24px  */
+  --typography-body-lh: 1.333; /* 32px  */
+
+  --typography-description-size: 1.125rem; /* 18px  */
+  --typography-description-lh: 1.3333; /* 24px  */
+
+  --typography-caption-size: 0.75rem; /* 12px  */
+  --typography-caption-lh: 1.1667; /* 14px  */
+
+  --typography-subheading-size: 2rem; /* 32px  */
+  --typography-subheading-lh: 1.25; /* 40px  */
+
+  --typography-heading-size: 2.5rem; /* 40px  */
+  --typography-heading-lh: 1.2; /* 48px */
+
+  --typography-hero-size: 7rem; /* 112px */
+  --typography-hero-lh: 1;
+
+  --typography-weight-regular: 400;
+  --typography-weight-bold: 700;
 }
 
 /* Dark mode */
@@ -40,31 +54,39 @@
     --color-background-default: var(--color-gray-900);
     --color-background-hover: var(--color-gray-800);
     --color-background-subdued: var(--color-gray-800);
-    --color-background-border: var(--color-gray-500);
+    --color-background-border-default: var(--color-gray-600);
+    --color-background-border-hover: var(--color-gray-0);
     --color-background-inverse-default: var(--color-gray-0);
     --color-background-inverse-hover: var(--color-gray-50);
 
     --color-text-default: var(--color-gray-0);
     --color-text-subdued: var(--color-gray-300);
     --color-text-inverse-default: var(--color-gray-900);
+
+    --color-interaction-primary-default: var(--color-gray-0);
   }
 }
 
-/* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--typography-font-family-display);
-  // font-variation-settings: "wdth" 125;
-  font-variation-settings: "opsz" 7;
-  letter-spacing: -0.025em;
-}
+/* Responsivity */
 
-p {
-  font-family: var(--typography-font-family),
-    var(--typography-font-family-fallback), -apple-system, sans-serif;
-  font-feature-settings: "ss02" on, "ss03" on, "ss06" on, "ss08" on;
+@media only screen and (max-width: 640px) {
+  :root {
+    --typography-body-size: 1.125rem; /* 18px / 16px */
+    --typography-body-lh: 1.3333; /* 24px / 18px */
+
+    --typography-description-size: 1rem; /* 16px / 16px */
+    --typography-description-lh: 1.25; /* 20px / 16px */
+
+    --typography-caption-size: 0.75rem; /* 12px / 16px */
+    --typography-caption-lh: 1.1667; /* 14px / 12px */
+
+    --typography-subheading-size: 1.5rem; /* 24px / 16px */
+    --typography-subheading-lh: 1.3333; /* 32px / 24px */
+
+    --typography-heading-size: 2rem; /* 32px / 16px */
+    --typography-heading-lh: 1.25; /* 40px / 32px */
+
+    --typography-hero-size: 3.5rem; /* 56px / 16px */
+    --typography-hero-lh: 1; /* unitless */
+  }
 }

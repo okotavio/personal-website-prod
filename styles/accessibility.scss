@@ -10,6 +10,36 @@ a {
 :focus-visible {
   outline: 2px solid var(--color-text-default);
   outline-offset: 2px;
+  z-index: 1000;
+}
+
+.skip-to-content-link {
+  background-color: var(--color-background-inverse-default);
+  color: var(--color-text-inverse-default);
+  width: inherit;
+  position: absolute;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 200ms var(--motion-ease-default);
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: -1;
+}
+
+.skip-to-content-link:focus-visible {
+  transform: translateY(0%);
+  opacity: 1;
+  z-index: 1;
+}
+
+.skip-to-content-link:focus-visible .label {
+  animation-delay: 150ms;
+  animation-duration: 400ms;
+  animation-name: header-label;
+  animation-timing-function: var(--motion-ease-default);
+  -webkit-animation-fill-mode: forwards;
 }
 
 @media (prefers-reduced-motion) {

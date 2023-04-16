@@ -1,7 +1,37 @@
 @font-face {
+  font-family: "Solway";
+  src: url(../public/fonts/Solway-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Schibsted";
+  src: url(../public/fonts/schibsted.woff2);
+  font-weight: 100 900;
+}
+
+@font-face {
   font-family: "Literata";
   src: url(../public/fonts/Literata.woff2);
   font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url(../public/fonts/haskoy.woff2);
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Corben";
+  src: url(../public/fonts/corben.woff2);
+  font-weight: 100 600;
+}
+
+@font-face {
+  font-family: "Corben";
+  src: url(../public/fonts/corben-bold.woff2);
+  font-weight: 600 900;
 }
 
 @font-face {
@@ -9,82 +39,6 @@
   src: url(../public/fonts/AspektaVF.woff2);
   font-weight: 100 900;
 }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextLight.woff2);
-//   font-weight: 300;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextLightItalic.woff2);
-//   font-weight: 300;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextRegular.woff2);
-//   font-weight: 400;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextMedium.woff2);
-//   font-weight: 500;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextMediumItalic.woff2);
-//   font-weight: 500;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextSemibold.woff2);
-//   font-weight: 600;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextSemiboldItalic.woff2);
-//   font-weight: 600;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextBold.woff2);
-//   font-weight: 700;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextBoldItalic.woff2);
-//   font-weight: 700;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextExtrabold.woff2);
-//   font-weight: 800;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Literata";
-//   src: url(../public/fonts/Literata/LiterataTT-TextExtraboldItalic.woff2);
-//   font-weight: 800;
-//   font-style: italic;
-// }
 
 @font-face {
   font-family: "Mona";

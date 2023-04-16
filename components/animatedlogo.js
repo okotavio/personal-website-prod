@@ -15,7 +15,7 @@ function AnimatedLogo() {
     });
   }, []);
 
-  return <div style={{ height: 48, width: 144 }} ref={container}></div>;
+  return <div style={{ height: 40 }} ref={container}></div>;
 }
 
 export default AnimatedLogo;

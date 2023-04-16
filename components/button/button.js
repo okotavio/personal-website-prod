@@ -1,20 +1,31 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Button({ children, link, variant, icon }) {
+export default function Button({ children, link, variant, icon, newWindow }) {
   return (
     <button
       className={`button ${variant}`}
       onClick={(e) => {
         e.preventDefault();
-        window.location.href = `${link}`;
+        if (link) {
+          if (newWindow) {
+            window.open(link);
+          } else {
+            window.location.href = link;
+          }
+        }
       }}
     >
-      {icon ? <div className="button-icon-start">{icon}</div> : ""}
+      {icon ? (
+        <span class="material-symbols-outlined button-icon">{icon}</span>
+      ) : (
+        ""
+      )}
       <div className={`button-label ${icon ? "button-label-icon" : ""}`}>
         {children}
       </div>
-      {icon ? <div className="button-icon-end">{icon}</div> : ""}
     </button>
   );
 }
+
+// {icon ? <div className="button-icon-end">{icon}</div> : ""}
