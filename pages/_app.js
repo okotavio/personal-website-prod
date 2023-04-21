@@ -5,6 +5,8 @@ import "../styles/globals.scss";
 import "../styles/theme.scss";
 import Script from "next/script";
 import * as gtag from "../lib/gtag";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
