@@ -7,11 +7,9 @@ import AnimatedLogo from "../components/animatedlogo";
 import Logo from "../components/logo";
 import Button from "./button/button";
 import IconButton from "./iconbutton/iconbutton";
-import { useGlobalMouseMove } from "../hooks/useGlobalMouseMove";
 import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 export default function Header({}) {
-  const [mouseX, mouseY] = useGlobalMouseMove();
   const prefersReducedMotion = usePrefersReducedMotion();
 
   return (
