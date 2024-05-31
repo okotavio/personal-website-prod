@@ -1,5 +1,5 @@
 ---
-title: "Credit sumlation"
+title: "Credit simulation"
 description: "Improving approval rates through awareness"
 date: "2019-01-01"
 image: "/images/credit-simulation/credit-simulation-thumb.png"
