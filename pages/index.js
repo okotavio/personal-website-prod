@@ -23,9 +23,42 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   const prefersReducedMotion = usePrefersReducedMotion();
+  const [showModal, setShowModal] = useState(true);
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <Layout>
+      {showModal && (
+        <div style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: "rgba(0,0,0,0.5)",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          zIndex: 1000,
+        }}>
+          <div style={{
+            background: "#fff",
+            padding: "1rem",
+            borderRadius: "4px",
+            maxWidth: "90%",
+            textAlign: "center",
+          }}>
+            <p>Welcome to the website!</p>
+            <button onClick={closeModal} style={{
+              marginTop: "1rem",
+              padding: "0.5rem 1rem",
+              cursor: "pointer",
+            }}>Close</button>
+          </div>
+        </div>
+      )}
       <Container>
         <div className="hero">
           <h1>Otávio Vidal</h1>
