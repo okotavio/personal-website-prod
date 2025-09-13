@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
     <Layout>
       <Container>
         <div className="hero">
-          <h1>Otavio Vidal</h1>
+          <h1>Otávio Vidal</h1>
           <p>
             Product designer building systematic and accessible experiences.
             <br />
