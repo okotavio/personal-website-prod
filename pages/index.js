@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
       {showModal && (
         <Modal onClose={closeModal}>
         <h3>This is an older version of my portfolio</h3>
-        <p>I’m currently redesigning it so the projects here don't reflect my most recent work.</p>
+        <p>I’m currently redesigning it so the projects here don&apos;t reflect my most recent work.</p>
         <p>You can reach out to me <a href="https://linkedin.com/in/otaviovidal" target="_blank" rel="noreferrer">on LinkedIn</a> and I can share a private deck with updated projects.</p>
         </Modal>
       )}
