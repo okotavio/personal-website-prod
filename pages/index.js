@@ -12,7 +12,7 @@ import Logo from "../components/logo";
 import Link from "next/link";
 import NavItem from "../components/navitem";
 import IconButton from "../components/iconbutton/iconbutton";
-import Modal from "../components/Modal";
+import Modal from "../components/modal/modal";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
