@@ -11,6 +11,8 @@ import AnimatedLogo from "../components/animatedlogo";
 import Logo from "../components/logo";
 import Link from "next/link";
 import NavItem from "../components/navitem";
+import IconButton from "../components/iconbutton/iconbutton";
+import Modal from "../components/Modal";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -31,33 +33,11 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       {showModal && (
-        <div style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0,0,0,0.5)",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          zIndex: 1000,
-        }}>
-          <div style={{
-            background: "#fff",
-            padding: "1rem",
-            borderRadius: "4px",
-            maxWidth: "90%",
-            textAlign: "center",
-          }}>
-            <p>Welcome to the website!</p>
-            <button onClick={closeModal} style={{
-              marginTop: "1rem",
-              padding: "0.5rem 1rem",
-              cursor: "pointer",
-            }}>Close</button>
-          </div>
-        </div>
+        <Modal onClose={closeModal}>
+        <h3>This is an older version of my portfolio</h3>
+        <p>I’m currently redesigning it so the projects here don't reflect my most recent work.</p>
+        <p>You can reach out to me <a href="https://linkedin.com/in/otaviovidal" target="_blank" rel="noreferrer">on LinkedIn</a> and I can share a private deck with updated projects.</p>
+        </Modal>
       )}
       <Container>
         <div className="hero">
